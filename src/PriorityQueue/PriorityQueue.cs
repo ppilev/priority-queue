@@ -2,6 +2,10 @@
 
 namespace System.Collections
 {
+    /// <summary>
+    /// Represents a prioritized collection of <see cref="IComparable{T}"/> items.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class PriorityQueue<T> where T : IComparable<T>
     {
         private List<T> data;
@@ -11,6 +15,10 @@ namespace System.Collections
             data = new List<T>();
         }
 
+        /// <summary>
+        /// Adds an object to the <see cref="PriorityQueue{T}"/>.
+        /// </summary>
+        /// <param name="item">The object to add to the <see cref="PriorityQueue{T}"/>.</param>
         public void Enqueue(T item)
         {
             data.Add(item);
@@ -25,6 +33,10 @@ namespace System.Collections
             }
         }
 
+        /// <summary>
+        /// Removes and returns the object at the beginning of the <see cref="PriorityQueue{T}"./>
+        /// </summary>
+        /// <returns>The object that is removed from the beginning of the queue.</returns>
         public T Dequeue()
         {
             // Assumes pq isn't empty
