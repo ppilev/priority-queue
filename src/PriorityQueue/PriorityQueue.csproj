@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>ppilev</Authors>
+    <Company>ppilev</Company>
+    <Description>Implementation of PriorityQueue based on James McCaffrey article.</Description>
+    <PackageProjectUrl>https://github.com/ppilev/priority-queue</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ppilev/priority-queue</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+</Project>
