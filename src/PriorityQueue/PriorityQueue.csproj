@@ -5,7 +5,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>ppilev</Authors>
     <Company>ppilev</Company>
-    <Description>Implementation of PriorityQueue based on James McCaffrey article.</Description>
+    <Description>Implementation of PriorityQueue based on James McCaffrey's Visual Studio Magazine article.
+[Priority Queues with C#](https://visualstudiomagazine.com/Articles/2012/11/01/Priority-Queues-with-C.aspx?Page=1)</Description>
     <PackageProjectUrl>https://github.com/ppilev/priority-queue</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ppilev/priority-queue</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
