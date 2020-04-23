@@ -166,5 +166,37 @@ namespace PriorityQueue.Tests
                 }
             }
         }
+
+        [Test]
+        public void QueueToListAndLoadFromTest()
+        {
+            queue.Enqueue(1);
+
+            // parent 1
+            queue.Enqueue(3);
+            queue.Enqueue(2);
+
+            // parent 2
+            queue.Enqueue(6);
+            queue.Enqueue(5);
+
+            // parent 3
+            queue.Enqueue(8);
+            queue.Enqueue(7);
+
+            queue.Enqueue(4);
+
+            var binaryTreeList = queue.ToList();
+            queue = PriorityQueue<int>.Load(binaryTreeList);
+
+            Assert.AreEqual(queue.Dequeue(), 1);
+            Assert.AreEqual(queue.Dequeue(), 2);
+            Assert.AreEqual(queue.Dequeue(), 3);
+            Assert.AreEqual(queue.Dequeue(), 4);
+            Assert.AreEqual(queue.Dequeue(), 5);
+            Assert.AreEqual(queue.Dequeue(), 6);
+            Assert.AreEqual(queue.Dequeue(), 7);
+            Assert.AreEqual(queue.Dequeue(), 8);
+        }
     }
 }

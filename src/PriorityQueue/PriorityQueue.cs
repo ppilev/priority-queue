@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace System.Collections
 {
@@ -8,12 +9,34 @@ namespace System.Collections
     /// <typeparam name="T"></typeparam>
     public class PriorityQueue<T> where T : IComparable<T>
     {
-        private List<T> data;
+        private IList<T> data;
 
-        public PriorityQueue()
+        /// <summary>
+        /// Loads the queue from a binary-tree ordered list.
+        /// </summary>
+        /// <param name="list">The list with binary-tree ordered items.</param>
+        /// <returns>The <see cref="PriorityQueue{T}"/>.</returns>
+        public static PriorityQueue<T> Load(IList<T> list)
         {
-            data = new List<T>();
+            return new PriorityQueue<T>(list.ToList());
         }
+
+        /// <summary>
+        /// Creates a new instance of <see cref="PriorityQueue{T}"/>
+        /// </summary>
+        public PriorityQueue() : this(new List<T>())
+        {
+        }
+
+        private PriorityQueue(IList<T> items)
+        {
+            data = items;
+        }
+
+        /// <summary>
+        ///  Gets the number of elements contained in <see cref="PriorityQueue{T}"/>.
+        /// </summary>
+        public int Count => data.Count;
 
         /// <summary>
         /// Adds an object to the <see cref="PriorityQueue{T}"/>.
@@ -36,7 +59,7 @@ namespace System.Collections
         /// <summary>
         /// Removes and returns the object at the beginning of the <see cref="PriorityQueue{T}"./>
         /// </summary>
-        /// <returns>The object that is removed from the beginning of the queue.</returns>
+        /// <returns>The object that is removed from the beginning of the <see cref="PriorityQueue{T}"/>.</returns>
         public T Dequeue()
         {
             // Assumes pq isn't empty
@@ -60,5 +83,30 @@ namespace System.Collections
             }
             return frontItem;
         }
+
+        /// <summary>
+        /// Returns the object at the beginning of the <see cref="PriorityQueue{T}"/> without removing it.
+        /// </summary>
+        /// <returns> The object at the beginning of <see cref="PriorityQueue{T}"/>.</returns>
+        /// <exception cref="InvalidOperationException">The <see cref="PriorityQueue{T}"/> is empty.</exception>
+        public T Peek()
+        {
+            if (data.Count == 0)
+            {
+                throw new InvalidOperationException("The System.Collections.Queue is empty.");
+            }
+
+            return data[0];
+        }
+
+        /// <summary>
+        /// Returns the list of queue items as a binary-tree ordered list.
+        /// </summary>
+        /// <returns>The list of queue items.</returns>
+        public List<T> ToList()
+        {
+            return data.ToList();
+        }
+
     }
 }
