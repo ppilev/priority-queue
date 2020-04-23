@@ -33,7 +33,12 @@
             </summary>
             <param name="item">The object to add to the <see cref="T:System.Collections.PriorityQueue`1"/>.</param>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:System.Collections.PriorityQueue`1.Dequeue" -->
+        <member name="M:System.Collections.PriorityQueue`1.Dequeue">
+            <summary>
+            Removes and returns the object at the beginning of the <see cref="T:System.Collections.PriorityQueue`1"/>.
+            </summary>
+            <returns>The object that is removed from the beginning of the <see cref="T:System.Collections.PriorityQueue`1"/>.</returns>
+        </member>
         <member name="M:System.Collections.PriorityQueue`1.Peek">
             <summary>
             Returns the object at the beginning of the <see cref="T:System.Collections.PriorityQueue`1"/> without removing it.

@@ -57,7 +57,7 @@ namespace System.Collections
         }
 
         /// <summary>
-        /// Removes and returns the object at the beginning of the <see cref="PriorityQueue{T}"./>
+        /// Removes and returns the object at the beginning of the <see cref="PriorityQueue{T}"/>.
         /// </summary>
         /// <returns>The object that is removed from the beginning of the <see cref="PriorityQueue{T}"/>.</returns>
         public T Dequeue()

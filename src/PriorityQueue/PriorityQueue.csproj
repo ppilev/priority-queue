@@ -10,7 +10,7 @@
     <PackageProjectUrl>https://github.com/ppilev/priority-queue</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ppilev/priority-queue</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
