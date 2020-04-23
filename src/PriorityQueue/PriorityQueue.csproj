@@ -10,7 +10,11 @@
     <PackageProjectUrl>https://github.com/ppilev/priority-queue</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ppilev/priority-queue</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Plamen.Pilev\source\repos\priority-queue\src\PriorityQueue\PriorityQueue.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

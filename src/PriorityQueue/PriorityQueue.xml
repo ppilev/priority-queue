@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PriorityQueue</name>
+    </assembly>
+    <members>
+        <member name="T:System.Collections.PriorityQueue`1">
+            <summary>
+            Represents a prioritized collection of <see cref="T:System.IComparable`1"/> items.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:System.Collections.PriorityQueue`1.Load(System.Collections.Generic.IList{`0})">
+            <summary>
+            Loads the queue from a binary-tree ordered list.
+            </summary>
+            <param name="list">The list with binary-tree ordered items.</param>
+            <returns>The <see cref="T:System.Collections.PriorityQueue`1"/>.</returns>
+        </member>
+        <member name="M:System.Collections.PriorityQueue`1.#ctor">
+            <summary>
+            Creates a new instance of <see cref="T:System.Collections.PriorityQueue`1"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.PriorityQueue`1.Count">
+            <summary>
+             Gets the number of elements contained in <see cref="T:System.Collections.PriorityQueue`1"/>.
+            </summary>
+        </member>
+        <member name="M:System.Collections.PriorityQueue`1.Enqueue(`0)">
+            <summary>
+            Adds an object to the <see cref="T:System.Collections.PriorityQueue`1"/>.
+            </summary>
+            <param name="item">The object to add to the <see cref="T:System.Collections.PriorityQueue`1"/>.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:System.Collections.PriorityQueue`1.Dequeue" -->
+        <member name="M:System.Collections.PriorityQueue`1.Peek">
+            <summary>
+            Returns the object at the beginning of the <see cref="T:System.Collections.PriorityQueue`1"/> without removing it.
+            </summary>
+            <returns> The object at the beginning of <see cref="T:System.Collections.PriorityQueue`1"/>.</returns>
+            <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.PriorityQueue`1"/> is empty.</exception>
+        </member>
+        <member name="M:System.Collections.PriorityQueue`1.ToList">
+            <summary>
+            Returns the list of queue items as a binary-tree ordered list.
+            </summary>
+            <returns>The list of queue items.</returns>
+        </member>
+    </members>
+</doc>
